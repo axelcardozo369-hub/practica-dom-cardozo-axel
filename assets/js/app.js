@@ -44,3 +44,6 @@ function eliminar(id){
   personajes.splice(indice,1);
   listaPersonajes(personajes);
 }
+const btnAgregar = document.getElementById("btnAgregar");
+const inputImagen = document.getElementById("inputImagen");
+const inputNombre = document.getElementById("inputNombre");
