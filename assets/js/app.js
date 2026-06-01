@@ -47,3 +47,9 @@ function eliminar(id){
 const btnAgregar = document.getElementById("btnAgregar");
 const inputImagen = document.getElementById("inputImagen");
 const inputNombre = document.getElementById("inputNombre");
+
+btnAgregar.addEventListener("click",function(){
+  const nombre = inputNombre.value.trim();
+  const imagen =inputImagen.value.trim();
+  
+})
