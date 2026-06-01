@@ -11,10 +11,10 @@ function listaPersonajes(lista){
   lista.forEach(function({id,nombre,imagen}){
     const card = `
     <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 bg bg-dark">
                     <img src="${imagen}" class="card-img-top" alt="${nombre}">
                     <div class="card-body text-center">
-                        <h5 class="card-title">${nombre}</h5>
+                        <h5 class="card-title text-warning fw-bold">${nombre}</h5>
                         <button class="btn btn-danger btn-sm" onclick="eliminar(${id})">
                             Eliminar
                         </button>
