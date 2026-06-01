@@ -29,22 +29,28 @@
       <div class="card p-3 mb-4">
         <h2>Agregar nuevo personaje</h2>
         <div class="mb-2">
-          <input
-            type="text"
-            id="inputNombre"
-            class="form-control"
-            placeholder="Nombre"
-          />
+          <form action="">
+            <input
+              type="text"
+              id="inputNombre"
+              class="form-control"
+              placeholder="Nombre"
+            />
+          </form>
         </div>
         <div class="mb-2">
-          <input
-            type="text"
-            id="inputImagen"
-            class="form-control"
-            placeholder="Introduce URL de imagen"
-          />
+          <form action="">
+            <input
+              type="text"
+              id="inputImagen"
+              class="form-control"
+              placeholder="Introduce URL de imagen"
+            />
+          </form>
         </div>
-        <button id="btnAgregar" class="btn btn-success">Agregar</button>
+        <button id="btnAgregar" class="btn btn-success" type="submit">
+          Agregar
+        </button>
       </div>
       <div id="galeria" class="row row-cols-1 row-cols-md-3 g-4"></div>
     </main>
