@@ -10,7 +10,7 @@ function listaPersonajes(lista){
   galeria.innerHTML = "";
   lista.forEach(function({id,nombre,imagen}){
     const card = `
-    div class="col">
+    <div class="col">
                 <div class="card h-100">
                     <img src="${imagen}" class="card-img-top" alt="${nombre}">
                     <div class="card-body text-center">
@@ -30,3 +30,10 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 const btnFiltrar = document.getElementById("btnFiltrar");
 const inputFiltro = document.getElementById("inputFiltro");
+btnFiltrar.addEventListener("click",function(){
+  const buscarTexto = inputFiltro.value.toLowerCase();
+  const resultado = personajes.filter(function(personaje){
+    return personaje.nombre.toLocaleLowerCase().includes(buscarTexto);
+  });
+  listaPersonajes(resultado);
+});
