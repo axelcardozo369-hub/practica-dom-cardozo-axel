@@ -37,3 +37,10 @@ btnFiltrar.addEventListener("click",function(){
   });
   listaPersonajes(resultado);
 });
+function eliminar(id){
+  const indice = personajes.findIndex(function(p){
+    return p.id===id;
+  });
+  personajes.splice(indice,1);
+  listaPersonajes(personajes);
+}
