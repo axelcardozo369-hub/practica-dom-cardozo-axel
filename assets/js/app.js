@@ -52,4 +52,4 @@ btnAgregar.addEventListener("click",function(){
   const nombre = inputNombre.value.trim();
   const imagen =inputImagen.value.trim();
   
-})
+});
