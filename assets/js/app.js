@@ -51,5 +51,16 @@ const inputNombre = document.getElementById("inputNombre");
 btnAgregar.addEventListener("click",function(){
   const nombre = inputNombre.value.trim();
   const imagen =inputImagen.value.trim();
-  
-})
+  if (nombre === "" || imagen === ""){
+  alert("Completa su nombre y la imagen");
+}
+const nuevoPersonaje = {
+  id: personajes.length + 1,
+  nombre: nombre,
+  imagen: imagen
+};
+personajes.push(nuevoPersonaje);
+listaPersonajes(personajes);
+inputNombre.value = "";
+inputImagen.value = "";
+});
