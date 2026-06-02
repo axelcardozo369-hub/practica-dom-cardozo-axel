@@ -51,5 +51,7 @@ const inputNombre = document.getElementById("inputNombre");
 btnAgregar.addEventListener("click",function(){
   const nombre = inputNombre.value.trim();
   const imagen =inputImagen.value.trim();
-  
-})
+  if (nombre === "" || imagen === ""){
+  alert("Completa su nombre y la imagen");
+}
+});
