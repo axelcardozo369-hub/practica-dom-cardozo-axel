@@ -54,4 +54,13 @@ btnAgregar.addEventListener("click",function(){
   if (nombre === "" || imagen === ""){
   alert("Completa su nombre y la imagen");
 }
+const nuevoPersonaje = {
+  id: personajes.length + 1,
+  nombre: nombre,
+  imagen: imagen
+};
+personajes.push(nuevoPersonaje);
+listaPersonajes(personajes);
+inputNombre.value = "";
+inputImagen.value = "";
 });
